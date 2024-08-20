@@ -1,5 +1,10 @@
 html {
     text-align: center;
+    font-family: 'Alata';
+}
+p {
+    margin: 24px;
+    text-align: left;
 }
 header {
     background-color: #aaafaa;
@@ -41,6 +46,23 @@ a:link {
 }
 a:hover {
     text-decoration: underline;
+}
+#introduction {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: inline-flex;
+}
+h1 {
+    margin: 20px;
+    font-size: 72px;
+    font-weight: bold;
+}
+#introduction-text {
+    max-width: 500px;
+}
+#main32 {
+    max-height: 500px;
+    border-radius: 5%;
 }
 footer {
     background-color: #303030;
