@@ -1,0 +1,26 @@
+html {
+    text-align: center;
+}
+header {
+    background-color: #aaafaa;
+}
+#header-div {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+#main-logo {
+    margin-right: 64px;
+}
+nav {
+    display: inline-flex;
+}
+.main-nav {
+    display: inline;
+    margin-right: 16px;
+    color: red;
+}
+footer {
+    background-color: #303030;
+}
