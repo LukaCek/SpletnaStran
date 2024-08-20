@@ -1,10 +1,15 @@
 html {
     text-align: center;
-    font-family: 'Alata';
 }
-p {
-    margin: 24px;
+/* chainge onyi p in <main> */
+main p {
+    padding: 20px;
     text-align: left;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #303030;
 }
 header {
     background-color: #aaafaa;
@@ -31,7 +36,7 @@ nav {
 }
 .main-nav {
     display: inline;
-    margin-right: 16px;
+    margin-right: 20px;
 }
 .main-nav {
     font-size: 16px;
@@ -47,23 +52,76 @@ a:link {
 a:hover {
     text-decoration: underline;
 }
+a:visited { /*dasables color chainging after clicking*/
+    color: black;
+}
 #introduction {
     padding-top: 48px;
     padding-bottom: 48px;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
 }
+#introduction-div2 {
+    display: flex;
+    justify-content: flex-start;
+}
+#introduction > div {
+    flex: 1 1 44%; /* Each div takes up 40% of the container's width */
+    box-sizing: border-box;
+    padding: 10px;
+}
+#introduction > div:nth-child(2) {
+    flex: 1 1 56%; /* This div takes up 60% of the container's width */
+  }
 h1 {
     margin: 20px;
     font-size: 72px;
     font-weight: bold;
+    font-family: "Alata", sans-serif;
 }
-#introduction-text {
-    max-width: 500px;
+.innerLeft {
+    max-width: 400px;
+    margin-left: auto;
 }
 #main32 {
-    max-height: 500px;
-    border-radius: 5%;
+    max-width: 600px;
+    align-content: center;
+    border-radius: 5%;  
 }
+@media (max-width: 1125px) {
+    #introduction-div1 {
+        display: flex;
+        justify-content: center;
+    }
+    #introduction-div2 {
+        display: flex;
+        justify-content: center;
+    }
+    .innerLeft {
+        margin: 0;
+    }
+    #introduction-image {
+        width: 100%;
+    }
+    .innerLeft {
+        max-width: 1100px;
+    }
+    #main32 {
+        max-width: 95%;
+    }
+}
+/*footer*/
 footer {
-    background-color: #303030;
+    font-family: "Alata", sans-serif;
+    padding: 16px;
+    background-color: #30404e;
+    height: 200px;
+    justify-content: space-around;
+    display: flex;
+}
+footer p {
+    color: #f9f9f9;
+}
+h3 {
+    color: #f9f9f9;
 }
