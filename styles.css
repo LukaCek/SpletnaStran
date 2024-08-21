@@ -14,8 +14,6 @@ main p {
 header {
     background-color: #aaafaa;
     font-weight: 600;
-}
-#header-div {
     padding-top: 24px;
     padding-bottom: 24px;
     padding-right: 16px;
@@ -122,6 +120,13 @@ footer {
 footer p {
     color: #f9f9f9;
 }
-h3 {
+footer h3 {
     color: #f9f9f9;
+}
+footer a:link, footer a:visited {
+    color: #f9f9f9;
+}
+footer .ico {
+    height: 32px;
+    margin: 2px;
 }
