@@ -1,0 +1,71 @@
+#h-text {
+    max-width: 606px;
+    display: inline-table;
+    margin-bottom: 80px;
+}
+
+h1 {
+    margin-top: 80px;
+    font-size: 80px;
+    margin-bottom: 23px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#h-text {
+    width: 50%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    background-color: #4d5762;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #3a434d;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #b3b3b3;
+}
+input, textarea {
+    border: 0px;
+    border-radius: 0px;
+}

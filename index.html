@@ -20,8 +20,8 @@
 <body>
     <header height="200"></header>
     <main>
-        <section id="introduction">
-            <div id="introduction-div1">
+        <section id="text-img">
+            <div id="text-img-div1">
                 <div class="innerLeft">
                     <h1>Cek Luka</h1>
                     <p>V svojem delu se vedno
@@ -34,9 +34,9 @@
                         najboljše možne rešitve.</p>
                 </div>
             </div>
-            <div id="introduction-div2">
+            <div id="text-img-div2">
                 <div class="innerRight">
-                    <img src="images/main32.jpg" alt="Slika krmilnika esp32" id="main32">
+                    <img src="images/main32.jpg" alt="Slika krmilnika esp32" id="text-img-img">
                 </div>
             </div>
         </section>
@@ -47,11 +47,11 @@
     <script>
         // load header and footer
         const headerElement = document.querySelector('header');
-        fetch('header.html')
+        fetch('/header.html')
             .then(response => response.text())
             .then(html => headerElement.innerHTML = html);
         const footerElement = document.querySelector('footer');
-        fetch('footer.html')
+        fetch('/footer.html')
             .then(response => response.text())
             .then(html => footerElement.innerHTML = html);
     </script>

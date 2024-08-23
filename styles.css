@@ -1,7 +1,16 @@
 html {
     text-align: center;
 }
-/* chainge onyi p in <main> */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Alata", sans-serif;
+    font-weight: 600;    
+}
+p {
+    font-family: Roboto, arial, sans-serif;
+    font-weight: 600;
+    color: #404040;
+
+}
 main p {
     padding: 20px;
     text-align: left;
@@ -11,6 +20,7 @@ main p {
     font-size: 16px;
     color: #303030;
 }
+/*---------------HEADER----------------*/
 header {
     background-color: #aaafaa;
     font-weight: 600;
@@ -25,7 +35,6 @@ header {
 #main-logo img {
     transition: transform 0.3s;
 }
-
 #main-logo img:hover {
     transform: scale(1.2);
 }
@@ -43,72 +52,85 @@ nav {
 .main-nav:hover {
     font-size: 18px;
 }
-a:link {
+header a:link {
     color: black;
     text-decoration: none;
 }
-a:hover {
+header a:hover {
     text-decoration: underline;
 }
-a:visited { /*dasables color chainging after clicking*/
+header a:visited { /*dasables color chainging after clicking*/
     color: black;
 }
-#introduction {
+/*---------------TEXT-IMG----------------*/
+#text-img h1 {
+    text-align: left;
+}
+#text-img{
     padding-top: 48px;
     padding-bottom: 48px;
     display: flex;
     flex-wrap: wrap;
 }
-#introduction-div2 {
+#text-img-div2 {
     display: flex;
     justify-content: flex-start;
 }
-#introduction > div {
+#text-img> div {
     flex: 1 1 44%; /* Each div takes up 40% of the container's width */
     box-sizing: border-box;
     padding: 10px;
 }
-#introduction > div:nth-child(2) {
+#text-img> div:nth-child(2) {
     flex: 1 1 56%; /* This div takes up 60% of the container's width */
   }
-h1 {
+#text-img h1 {
     margin: 20px;
     font-size: 72px;
     font-weight: bold;
     font-family: "Alata", sans-serif;
 }
-.innerLeft {
+#text-img .innerLeft {
     max-width: 400px;
     margin-left: auto;
 }
-#main32 {
+#text-img-img {
     max-width: 600px;
     align-content: center;
     border-radius: 5%;  
 }
 @media (max-width: 1125px) {
-    #introduction-div1 {
+    #text-img-div1 {
         display: flex;
         justify-content: center;
     }
-    #introduction-div2 {
+    #text-img-div2 {
         display: flex;
         justify-content: center;
     }
-    .innerLeft {
+    #text-img .innerLeft {
         margin: 0;
     }
-    #introduction-image {
-        width: 100%;
-    }
-    .innerLeft {
+    #text-img .innerLeft {
         max-width: 1100px;
     }
-    #main32 {
+    #text-img-img {
         max-width: 95%;
     }
 }
-/*footer*/
+/*---------------IMG-TEXT----------------*/
+#img-text {
+    display: flexbox;
+}
+#text-img> div {
+    flex: 1 1 44%; /* Each div takes up 40% of the container's width */
+    box-sizing: border-box;
+    padding: 10px;
+}
+#text-img> div:nth-child(2) {
+    flex: 1 1 56%; /* This div takes up 60% of the container's width */
+}
+/*----------------footer----------------*/
 footer {
     font-family: "Alata", sans-serif;
     padding: 16px;
@@ -116,6 +138,9 @@ footer {
     height: 200px;
     justify-content: space-around;
     display: flex;
+}
+footer div{
+    min-width: 200px;
 }
 footer p {
     color: #f9f9f9;
