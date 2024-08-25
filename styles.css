@@ -1,27 +1,20 @@
 html {
-    text-align: center;
+    font-family: sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Alata", sans-serif;
-    font-weight: 600;    
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    line-height: 96px;
 }
 p {
-    font-family: Roboto, arial, sans-serif;
-    font-weight: 600;
-    color: #404040;
-
+    font-family: 'Alata', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1d1e20;
 }
-main p {
-    padding: 20px;
-    text-align: left;
-    font-family: "Alata", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    color: #303030;
-}
-/*---------------HEADER----------------*/
+/*---------------header----------------*/
 header {
+    text-align: center;
     background-color: #aaafaa;
     font-weight: 600;
     padding-top: 24px;
@@ -29,27 +22,27 @@ header {
     padding-right: 16px;
     padding-left: 16px;
 }
-#main-logo {
+header #main-logo {
     margin-right: 64px;
 }
-#main-logo img {
+header #main-logo img {
     transition: transform 0.3s;
 }
-#main-logo img:hover {
+header #main-logo img:hover {
     transform: scale(1.2);
 }
-nav {
+header nav {
     display: inline-flex;
 }
-.main-nav {
+header .main-nav {
     display: inline;
     margin-right: 20px;
 }
-.main-nav {
+header .main-nav {
     font-size: 16px;
     transition: font-size 0.2s ease-in-out;
 }
-.main-nav:hover {
+header .main-nav:hover {
     font-size: 18px;
 }
 header a:link {
@@ -62,96 +55,47 @@ header a:hover {
 header a:visited { /*dasables color chainging after clicking*/
     color: black;
 }
-/*---------------TEXT-IMG----------------*/
-#text-img h1 {
-    text-align: left;
+/*---------------.project_intro----------------*/
+.project_intro {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 750px;
+    margin: auto;
+}	
+.project_intro h1 {
+    text-align: center;
+    font-size: 96px;
+    margin-bottom: 40px;
 }
-#text-img{
-    padding-top: 48px;
-    padding-bottom: 48px;
-    display: flex;
-    flex-wrap: wrap;
-}
-#text-img-div2 {
-    display: flex;
-    justify-content: flex-start;
-}
-#text-img> div {
-    flex: 1 1 44%; /* Each div takes up 40% of the container's width */
-    box-sizing: border-box;
-    padding: 10px;
-}
-#text-img> div:nth-child(2) {
-    flex: 1 1 56%; /* This div takes up 60% of the container's width */
-  }
-#text-img h1 {
-    margin: 20px;
-    font-size: 72px;
-    font-weight: bold;
-    font-family: "Alata", sans-serif;
-}
-#text-img .innerLeft {
-    max-width: 400px;
+.project_intro img {
+    display: block;
     margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    border-radius: 20px;
 }
-#text-img-img {
-    max-width: 600px;
-    align-content: center;
-    border-radius: 5%;  
+.project_intro p {
+    padding-bottom: 32px;
 }
-@media (max-width: 1125px) {
-    #text-img-div1 {
-        display: flex;
-        justify-content: center;
-    }
-    #text-img-div2 {
-        display: flex;
-        justify-content: center;
-    }
-    #text-img .innerLeft {
-        margin: 0;
-    }
-    #text-img .innerLeft {
-        max-width: 1100px;
-    }
-    #text-img-img {
-        max-width: 95%;
-    }
+/*---------------.h_text----------------*/
+.h_text {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 750px;
+    margin: auto;
+}	
+.h_text h2 {
+    text-align: center;
+    font-size: 64px;
+    line-height: 77px;
+    margin-bottom: 36px;
 }
-/*---------------IMG-TEXT----------------*/
-#img-text {
-    display: flexbox;
-}
-#text-img> div {
-    flex: 1 1 44%; /* Each div takes up 40% of the container's width */
-    box-sizing: border-box;
-    padding: 10px;
-}
-#text-img> div:nth-child(2) {
-    flex: 1 1 56%; /* This div takes up 60% of the container's width */
-}
-/*----------------footer----------------*/
+/*---------------footer----------------*/
 footer {
-    font-family: "Alata", sans-serif;
-    padding: 16px;
-    background-color: #30404e;
-    height: 200px;
-    justify-content: space-around;
+    background-color:rgb(48, 63, 78);
+}
+/*-------------#kontakt_form--------------*/
+#kontakt_form {
     display: flex;
-}
-footer div{
-    min-width: 200px;
-}
-footer p {
-    color: #f9f9f9;
-}
-footer h3 {
-    color: #f9f9f9;
-}
-footer a:link, footer a:visited {
-    color: #f9f9f9;
-}
-footer .ico {
-    height: 32px;
-    margin: 2px;
+    justify-content: center;
 }
