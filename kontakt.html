@@ -11,20 +11,22 @@
   <link href="kontakt.css" rel="stylesheet">
   <title>Cek Luka</title>
 </head>
+
 <body>
   <header></header>
   <section id="kontakt_form">
     <div id="h-text">
       <h1>Kontaktiraj me</h1>
-      <p>Če imate kakršna koli vprašanja ali ideje, me lahko kontaktirate. Uporabite lahko obrazec na tej spletni strani ali mi pošljete neposredno e-pošto. Cenim vaše zanimanje in se veselim vašega odziva.</p>
-      <form action="" class="gpfont">
+      <p>Če imate kakršna koli vprašanja ali ideje, me lahko kontaktirate. Uporabite lahko obrazec na tej spletni strani
+        ali mi pošljete neposredno e-pošto. Cenim vaše zanimanje in se veselim vašega odziva.</p>
+      <form action="https://formsubmit.co/jaz@cekluka.com" class="gpfont" method="POST">
         <label for="ime">Ime*<input type="text" id="ime" placeholder="Vaše ime"></label>
         <label for="priimek">Priimek<input type="text" id="priimek" placeholder="Vaš priimek"></label>
         <label for="email">Vaš email*<input type="email" id="email" placeholder="Vaš e-poštni naslov"></label>
         <label for="sporocilo">Sporočilo*<textarea id="sporocilo" placeholder="Vpiši svoje poročilo"></textarea></label>
         <button type="submit">Submit</button>
       </form>
-    </div>    
+    </div>
   </section>
   <footer></footer>
   <script>
@@ -38,6 +40,6 @@
       .then(response => response.text())
       .then(html => footerElement.innerHTML = html);
   </script>
-  </body>
+</body>
 
 </html>

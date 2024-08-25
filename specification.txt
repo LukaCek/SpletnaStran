@@ -1,0 +1,6 @@
+HTML tegs:
+    h1, h2, p, a, div, section, forum, title, link, img, header, footer...
+CSS properties:
+    color, margin, font-family, padding, display...
+I used bootstrap mainly for text-box style and button style.
+I used JS for alerting user theat website is under dewelopment after 10 seconds. And loading footer and header.

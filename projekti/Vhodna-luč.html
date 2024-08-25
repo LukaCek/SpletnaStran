@@ -18,13 +18,13 @@
     <header></header>
     <main>
         <section class="project_intro">
-            <h1>Vhodna luč</h1>
+            <h1 class = "h">Vhodna luč</h1>
             <p>Vhodna luč je moj prvi večji projekt, ki vsebuje izdelavo PCB-jev, 3D tiskanje ohišja zanj, naročanje in izbiranje primernih električnih komponent in pisanje programa za krmilnik, da se bo vse skupaj lahko upravljalo preko WiFi-ja in preko MQTT povezavo s home assistant-om.</p>
             <img src="/images/Vhodna luč.jpg" alt="Vhodna luč">
         </section>
         <section>
             <div class="h_text">
-                <h2>Električni dizajn</h2>
+                <h2 class="h">Električni dizajn</h2>
                 <p>Za krmilnik uporabljam ESP-12F. Glavni komponenti so HC-SR501 PIR senzor gibanja, 12v led luč, fotoupor ali senzor svetlosti, ter RG ledica, ki sveti zeleno če senzor gibanja zaznava gibanje in sveti rdeče če sveti led luč.</p>
                 <p>Električna skica spodaj je skica za PCB, vsi komponenti so izbrani na spletni strani LCSC.</p>
                 <p>Uporabljen je esp-12f modul za povezavo z WiFi-jem ter krmiljenje vsega skupaj, imamo dva AMS1117 regulatorja napetosti enega na 5.0v ter drugega za 3.3v. Uporabljen je tudi manjši MOSFET za upravljanje led luči. Zdrži konstantni tok do 2.8 ampera, led luč, ki jo uporabljam porabi maksimalno 1,4 ampera.</p>

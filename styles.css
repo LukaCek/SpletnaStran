@@ -1,17 +1,20 @@
 html {
     font-family: sans-serif;
 }
+
 h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 80px;
     line-height: 96px;
 }
+
 p {
     font-family: 'Alata', sans-serif;
     font-size: 18px;
     line-height: 27px;
     color: #1d1e20;
 }
+
 /*---------------header----------------*/
 header {
     text-align: center;
@@ -22,51 +25,65 @@ header {
     padding-right: 16px;
     padding-left: 16px;
 }
+
 header #main-logo {
     margin-right: 64px;
 }
+
 header #main-logo img {
     transition: transform 0.3s;
 }
+
 header #main-logo img:hover {
     transform: scale(1.2);
 }
+
 header nav {
     display: inline-flex;
 }
+
 header .main-nav {
     display: inline;
     margin-right: 20px;
 }
+
 header .main-nav {
     font-size: 16px;
     transition: font-size 0.2s ease-in-out;
 }
+
 header .main-nav:hover {
     font-size: 18px;
 }
+
 header a:link {
     color: black;
     text-decoration: none;
 }
+
 header a:hover {
     text-decoration: underline;
 }
-header a:visited { /*dasables color chainging after clicking*/
+
+header a:visited {
+    /*dasables color chainging after clicking*/
     color: black;
 }
+
 /*---------------.project_intro----------------*/
 .project_intro {
     padding-left: 32px;
     padding-right: 32px;
     max-width: 750px;
     margin: auto;
-}	
-.project_intro h1 {
+}
+
+.project_intro .h {
     text-align: center;
     font-size: 96px;
     margin-bottom: 40px;
 }
+
 .project_intro img {
     display: block;
     margin-left: auto;
@@ -74,28 +91,68 @@ header a:visited { /*dasables color chainging after clicking*/
     max-width: 100%;
     border-radius: 20px;
 }
+
 .project_intro p {
     padding-bottom: 32px;
 }
+
 /*---------------.h_text----------------*/
 .h_text {
     padding-left: 32px;
     padding-right: 32px;
     max-width: 750px;
     margin: auto;
-}	
-.h_text h2 {
+}
+
+.h_text .h {
     text-align: center;
     font-size: 64px;
     line-height: 77px;
     margin-bottom: 36px;
 }
+
 /*---------------footer----------------*/
 footer {
-    background-color:rgb(48, 63, 78);
+    background-color: rgba(48, 63, 78, 0.9);
 }
+
+footer .col {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+footer .ico {
+    margin-top: 8px;
+    width: 32px;
+}
+
+footer a {
+    color: black;
+    font-family: 'Alata', sans-serif;
+}
+
+footer .h {
+    color: #fff;
+}
+
+footer .projekti {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .form-control {
+    margin-bottom: 16px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 /*-------------#kontakt_form--------------*/
 #kontakt_form {
     display: flex;
     justify-content: center;
+    margin-bottom: 64px;
 }
