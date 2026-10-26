@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projekti na področju programiranja, elektronike, avtomatizacije, 3D tiskanja in študijskih orodij.">
+    <meta name="theme-color" content="#aaafaa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/site.js" defer></script>
+    <title>Projekti | Cek Luka</title>
 </head>
 <body>
-    <a href="/">Domov</a>
+    <header class="site-header"></header>
+    <main id="vsebina">
+      <section class="container page-intro">
+        <span class="eyebrow">Moje delo</span>
+        <h1>Projekti</h1>
+        <p class="lead">Izbor orodij in praktičnih projektov. Pri projektih z javno kodo so dodane povezave do repozitorijev.</p>
+      </section>
+      <section class="container project-grid" aria-label="Seznam projektov">
+        <article class="card">
+            <span class="tag">Študij · MCP · TrueNAS</span>
+            <h3>FE Gradiva</h3>
+            <p>Strežnik za iskanje in ogled gradiv z lokalnim indeksom ter beleženjem dejanskih učnih poskusov. Izvorne študijske datoteke ostajajo samo za branje.</p>
+            <a class="card-link" href="https://github.com/LukaCek/FE-ChatGPT" target="_blank" rel="noopener noreferrer">Repozitorij →</a>
+          </article>
+        <article class="card">
+            <span class="tag">Študij · Python · Docker</span>
+            <h3>Sinhronizacija e.FE</h3>
+            <p>Enosmerno arhiviranje dostopnih datotek iz spletne učilnice v lokalno mapo, z offline HTML pregledom. Projekt je v beta razvoju.</p>
+            <a class="card-link" href="https://github.com/LukaCek/FE-splena-ucilnica-sync" target="_blank" rel="noopener noreferrer">Repozitorij →</a>
+          </article>
+        <article class="card">
+            <span class="tag">API · Python · FastAPI</span>
+            <h3>Simple AIProxy</h3>
+            <p>Prehod za modele različnih ponudnikov z združljivim API-vmesnikom, usmerjanjem zahtevkov in administracijo.</p>
+            <a class="card-link" href="https://github.com/LukaCek/simple-AIproxy" target="_blank" rel="noopener noreferrer">Repozitorij →</a>
+          </article>
+        <article class="card">
+            <span class="tag">3D tisk · Python · MQTT</span>
+            <h3>BambuControll</h3>
+            <p>Knjižnica za povezovanje s tiskalniki Bambu Lab, spremljanje stanja in upravljanje tiskalnih opravil.</p>
+            <a class="card-link" href="https://github.com/LukaCek/BambuControll" target="_blank" rel="noopener noreferrer">Repozitorij →</a>
+          </article>
+        <article class="card">
+            <span class="tag">3D tisk · Flask · OrcaSlicer</span>
+            <h3>Kalkulator 3D tiska</h3>
+            <p>Projekt za nalaganje STL datotek ter ocenjevanje časa tiska in porabe materiala. Po dokumentaciji je še v razvoju.</p>
+            <a class="card-link" href="https://github.com/LukaCek/slice_api" target="_blank" rel="noopener noreferrer">Repozitorij →</a>
+          </article>
+        <article class="card">
+            <span class="tag">Splet · Python · SQLite</span>
+            <h3>QR sledenje plakatom</h3>
+            <p>Kontaktna stran z QR identifikatorji plakatov in beleženjem zahtevkov za osnovno statistiko.</p>
+            <a class="card-link" href="https://github.com/LukaCek/kuzki-contact" target="_blank" rel="noopener noreferrer">Repozitorij →</a>
+          </article>
+        <article class="card">
+            <span class="tag">Elektronika · ESP-12F · MQTT</span>
+            <h3>Vhodna luč</h3>
+            <p>Razvoj vhodne luči s senzorjem gibanja, tipalom svetlobe in lastnim elektronskim vezjem.</p>
+            <a class="card-link" href="/projekti/Vhodna-lu%C4%8D.html">Preberi opis →</a>
+          </article>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
 </body>
 </html>
