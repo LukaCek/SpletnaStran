@@ -1,38 +1,43 @@
 <!DOCTYPE html>
+
 <html lang="sl">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Elektronski projekt vhodne luči z ESP-12F, senzorjem gibanja in vezjem za krmiljenje LED osvetlitve.">
-  <meta name="theme-color" content="#aaafaa">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-  <link href="/styles.css" rel="stylesheet">
-  <script src="/site.js" defer></script>
-  <title>Vhodna luč | Cek Luka</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <!-- bootstraop -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="/styles.css" rel="stylesheet">
+    <title>Vhodna luč | cekluka</title>
 </head>
+
 <body>
-  <header class="site-header"></header>
-  <main id="vsebina">
-    <article class="container project-detail section">
-      <a href="/projekti.html">← Nazaj na projekte</a>
-      <div class="page-intro">
-        <span class="eyebrow">Elektronika · projekt</span>
-        <h1>Vhodna luč</h1>
-        <p class="lead">Zasnova vhodne osvetlitve s senzorjem gibanja, tipalom svetlobe in krmilnikom ESP-12F.</p>
-      </div>
-      <figure>
-        <img src="/images/Vhodna%20lu%C4%8D.jpg" alt="Prikaz projekta vhodne luči" loading="lazy">
-      </figure>
-      <div class="content-block">
-        <h2>Elektronska zasnova</h2>
-        <p>Projekt predvideva lastno tiskano vezje, ohišje iz 3D tiska in programsko krmiljenje prek Wi-Fi ter MQTT.</p>
-        <p>V zasnovi so ESP-12F, PIR senzor HC-SR501, tipalo svetlobe in MOSFET za krmiljenje 12-voltne LED osvetlitve. Za napajanje vezja sta predvidena napetostna regulatorja za 5 V in 3,3 V.</p>
-        <p>To je opis zasnove projekta, ne poročilo o preizkušeni končni napravi.</p>
-      </div>
-    </article>
-  </main>
-  <footer class="site-footer"></footer>
+    <header></header>
+    <main>
+        <section class="project_intro">
+            <h1 class = "h">Vhodna luč</h1>
+            <p>Projekt vhodne luči vključuje načrtovanje tiskanega vezja, 3D-tiskanega ohišja in krmiljenje osvetlitve z mikrokrmilnikom prek Wi-Fi ter MQTT. Gre za opis zasnove.</p>
+            <img src="/images/Vhodna luč.jpg" alt="Vhodna luč">
+        </section>
+        <section>
+            <div class="h_text">
+                <h2 class="h">Električni dizajn</h2>
+                <p>V zasnovi uporabljam ESP-12F, PIR senzor HC-SR501, tipalo svetlobe in 12-V LED osvetlitev.</p>
+                <p>Za vezje sem izbiral komponente iz ponudbe LCSC.</p>
+                <p>Za napajanje sta predvidena regulatorja 5 V in 3,3 V. MOSFET omogoča preklapljanje LED luči.</p>
+            </div>
+        </section>
+        
+    </main>
+    <footer></footer>
+    <script src="/site.js" defer></script>
 </body>
+
 </html>

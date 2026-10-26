@@ -1,60 +1,40 @@
 <!DOCTYPE html>
 <html lang="sl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Piši mi glede elektronike, programiranja, projektov ali sodelovanja.">
-    <meta name="theme-color" content="#aaafaa">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-    <script src="/site.js" defer></script>
-    <title>Kontakt | Cek Luka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <link href="styles.css" rel="stylesheet">
+  <link href="kontakt.css" rel="stylesheet">
+  <meta name="description" content="Kontakt za vprašanja o projektih iz elektronike, programiranja in 3D tiskanja.">
+  <title>Kontakt | Cek Luka</title>
 </head>
+
 <body>
-    <header class="site-header"></header>
-    <main id="vsebina">
-      <section class="container page-intro">
-        <span class="eyebrow">Kontakt</span>
-        <h1>Kontaktiraj me</h1>
-        <p class="lead">Za vprašanja o projektih ali sodelovanju mi lahko pošlješ sporočilo.</p>
-      </section>
-      <div class="container contact-layout">
-        <section aria-labelledby="neposredno">
-          <h2 id="neposredno">E-pošta</h2>
-          <p>Najbolj neposreden način:</p>
-          <p><a href="mailto:jaz@cekluka.com">jaz@cekluka.com</a></p>
-          <p><a href="https://github.com/LukaCek" target="_blank" rel="noopener noreferrer">GitHub profil →</a></p>
-        </section>
-        <section class="content-block" aria-labelledby="obrazec">
-          <h2 id="obrazec">Pošlji sporočilo</h2>
-          <form class="contact-form" action="https://formsubmit.co/jaz@cekluka.com" method="POST">
-            <input type="hidden" name="_subject" value="Sporočilo s cekluka.com">
-            <div class="field-row">
-              <div>
-                <label for="ime">Ime *</label>
-                <input id="ime" name="name" type="text" autocomplete="given-name" maxlength="100" required>
-              </div>
-              <div>
-                <label for="priimek">Priimek</label>
-                <input id="priimek" name="priimek" type="text" autocomplete="family-name" maxlength="100">
-              </div>
-            </div>
-            <div>
-              <label for="email">E-poštni naslov *</label>
-              <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
-            </div>
-            <div>
-              <label for="sporocilo">Sporočilo *</label>
-              <textarea id="sporocilo" name="message" maxlength="5000" rows="6" required></textarea>
-            </div>
-            <p class="note">* Obvezno polje. Obrazec pošilja podatke prek zunanje storitve FormSubmit. Če tega ne želiš, mi piši neposredno po e-pošti.</p>
-            <div><button class="button button-primary" type="submit">Pošlji sporočilo</button></div>
-          </form>
-        </section>
-      </div>
-    </main>
-    <footer class="site-footer"></footer>
+  <header></header>
+  <main>
+  <section id="kontakt_form">
+    <div id="h-text">
+      <h1>Kontaktiraj me</h1>
+      <p>Za vprašanja o projektih ali sodelovanju mi lahko pišete na <a href="mailto:jaz@cekluka.com">jaz@cekluka.com</a> ali uporabite obrazec.</p>
+      <form action="https://formsubmit.co/jaz@cekluka.com" class="gpfont" method="POST">
+        <label for="ime">Ime*<input type="text" id="ime" name="name" autocomplete="given-name" required placeholder="Vaše ime"></label>
+        <label for="priimek">Priimek<input type="text" id="priimek" name="priimek" autocomplete="family-name" placeholder="Vaš priimek"></label>
+        <label for="email">Vaš email*<input type="email" id="email" name="email" autocomplete="email" required placeholder="Vaš e-poštni naslov"></label>
+        <label for="sporocilo">Sporočilo*<textarea id="sporocilo" name="message" placeholder="Vpišite svoje sporočilo" required></textarea></label>
+        <button type="submit">Pošlji</button>
+      </form>
+      <p style="font-size: 14px;">Obrazec uporablja storitev FormSubmit.</p>
+    </div>
+  </section>
+  </main>
+  <footer></footer>
+  <script src="/site.js" defer></script>
 </body>
+
 </html>

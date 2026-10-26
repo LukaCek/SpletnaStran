@@ -1,70 +1,56 @@
 <!DOCTYPE html>
 <html lang="sl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Projekti na področju programiranja, elektronike, avtomatizacije, 3D tiskanja in študijskih orodij.">
-    <meta name="theme-color" content="#aaafaa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-    <script src="/site.js" defer></script>
+    <!-- bootstraop -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <meta name="description" content="Izbrani projekti iz elektronike, programiranja, avtomatizacije in 3D tiskanja.">
     <title>Projekti | Cek Luka</title>
 </head>
+
+
 <body>
-    <header class="site-header"></header>
-    <main id="vsebina">
-      <section class="container page-intro">
-        <span class="eyebrow">Moje delo</span>
-        <h1>Projekti</h1>
-        <p class="lead">Izbor orodij in praktičnih projektov. Pri projektih z javno kodo so dodane povezave do repozitorijev.</p>
-      </section>
-      <section class="container project-grid" aria-label="Seznam projektov">
-        <article class="card">
-            <span class="tag">Študij · MCP · TrueNAS</span>
-            <h3>FE Gradiva</h3>
-            <p>Strežnik za iskanje in ogled gradiv z lokalnim indeksom ter beleženjem dejanskih učnih poskusov. Izvorne študijske datoteke ostajajo samo za branje.</p>
-            <a class="card-link" href="https://github.com/LukaCek/FE-ChatGPT" target="_blank" rel="noopener noreferrer">Repozitorij →</a>
-          </article>
-        <article class="card">
-            <span class="tag">Študij · Python · Docker</span>
-            <h3>Sinhronizacija e.FE</h3>
-            <p>Enosmerno arhiviranje dostopnih datotek iz spletne učilnice v lokalno mapo, z offline HTML pregledom. Projekt je v beta razvoju.</p>
-            <a class="card-link" href="https://github.com/LukaCek/FE-splena-ucilnica-sync" target="_blank" rel="noopener noreferrer">Repozitorij →</a>
-          </article>
-        <article class="card">
-            <span class="tag">API · Python · FastAPI</span>
-            <h3>Simple AIProxy</h3>
-            <p>Prehod za modele različnih ponudnikov z združljivim API-vmesnikom, usmerjanjem zahtevkov in administracijo.</p>
-            <a class="card-link" href="https://github.com/LukaCek/simple-AIproxy" target="_blank" rel="noopener noreferrer">Repozitorij →</a>
-          </article>
-        <article class="card">
-            <span class="tag">3D tisk · Python · MQTT</span>
-            <h3>BambuControll</h3>
-            <p>Knjižnica za povezovanje s tiskalniki Bambu Lab, spremljanje stanja in upravljanje tiskalnih opravil.</p>
-            <a class="card-link" href="https://github.com/LukaCek/BambuControll" target="_blank" rel="noopener noreferrer">Repozitorij →</a>
-          </article>
-        <article class="card">
-            <span class="tag">3D tisk · Flask · OrcaSlicer</span>
-            <h3>Kalkulator 3D tiska</h3>
-            <p>Projekt za nalaganje STL datotek ter ocenjevanje časa tiska in porabe materiala. Po dokumentaciji je še v razvoju.</p>
-            <a class="card-link" href="https://github.com/LukaCek/slice_api" target="_blank" rel="noopener noreferrer">Repozitorij →</a>
-          </article>
-        <article class="card">
-            <span class="tag">Splet · Python · SQLite</span>
-            <h3>QR sledenje plakatom</h3>
-            <p>Kontaktna stran z QR identifikatorji plakatov in beleženjem zahtevkov za osnovno statistiko.</p>
-            <a class="card-link" href="https://github.com/LukaCek/kuzki-contact" target="_blank" rel="noopener noreferrer">Repozitorij →</a>
-          </article>
-        <article class="card">
-            <span class="tag">Elektronika · ESP-12F · MQTT</span>
-            <h3>Vhodna luč</h3>
-            <p>Razvoj vhodne luči s senzorjem gibanja, tipalom svetlobe in lastnim elektronskim vezjem.</p>
-            <a class="card-link" href="/projekti/Vhodna-lu%C4%8D.html">Preberi opis →</a>
-          </article>
-      </section>
+    <header></header>
+    <main>
+        <section>
+            <div class="project_intro">
+                <h1 class="h">Projekti</h1>
+                <p>Izbrani projekti. Pri tistih z javno kodo je dodana povezava na GitHub.</p>
+            </div>
+        </section>
+        <section style="padding-bottom: 32px;">
+            <div class="h_text">
+                <h2 class="h">Programska oprema</h2>
+                <p><strong><a href="https://github.com/LukaCek/FE-ChatGPT">FE Gradiva</a></strong> — MCP strežnik za pregled študijskih gradiv in beleženje preverjenih učnih poskusov.</p>
+                <p><strong><a href="https://github.com/LukaCek/FE-splena-ucilnica-sync">Sinhronizacija e.FE</a></strong> — Beta orodje za lokalno arhiviranje datotek iz spletne učilnice.</p>
+                <p><strong><a href="https://github.com/LukaCek/simple-AIproxy">Simple AIProxy</a></strong> — API-prehod za usmerjanje zahtevkov med različnimi ponudniki jezikovnih modelov.</p>
+                <p><strong><a href="https://github.com/LukaCek/kuzki-contact">QR sledenje plakatom</a></strong> — Kontaktna stran z ID-ji QR plakatov in beleženjem skenov.</p>
+            </div>
+        </section>
+        <section style="padding-bottom: 32px;">
+            <div class="h_text">
+                <h2 class="h">Elektronika in 3D tisk</h2>
+                <p><strong><a href="https://github.com/LukaCek/BambuControll">BambuControll</a></strong> — Python knjižnica za spremljanje in upravljanje tiskalnikov Bambu Lab prek MQTT.</p>
+                <p><strong><a href="https://github.com/LukaCek/slice_api">Kalkulator 3D tiska</a></strong> — Razvojni projekt za oceno časa tiskanja in porabe materiala iz STL modela.</p>
+                <p><strong><a href="/projekti/Vhodna-lu%C4%8D.html">Vhodna luč</a></strong> — Zasnova elektronike in ohišja za vhodno luč s senzorjem gibanja.</p>
+            </div>
+        </section>
     </main>
-    <footer class="site-footer"></footer>
+    <footer></footer>
+    <script src="/site.js" defer></script>
 </body>
 </html>
