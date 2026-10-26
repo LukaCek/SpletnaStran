@@ -10,7 +10,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--page); color: var(--ink); font-family: 'Alata', system-ui, sans-serif; line-height: 1.6; }
+body { margin: 0; display: flex; flex-direction: column; min-height: 100vh; background: var(--page); color: var(--ink); font-family: 'Alata', system-ui, sans-serif; line-height: 1.6; }
 a { color: #244d59; text-underline-offset: 3px; }
 a:hover { color: #162f38; }
 img { max-width: 100%; height: auto; }
@@ -98,3 +98,9 @@ main { min-height: 52vh; }
   html { scroll-behavior: auto; }
   .site-logo img { transition: none; }
 }
+/* Legacy pages that still use the original content class names. */
+.project_intro, .h_text { width: min(100% - 2.3rem, 750px); margin-inline: auto; }
+.project_intro { padding-block: 2.5rem; }
+.project_intro img { display: block; margin-inline: auto; border-radius: 12px; }
+.project_intro .h, .h_text .h { text-align: center; font-size: clamp(2rem, 5vw, 3.4rem); }
+.h_text { padding-block: 1.25rem; }
