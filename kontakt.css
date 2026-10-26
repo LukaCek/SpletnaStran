@@ -69,3 +69,8 @@ input, textarea {
     border: 0px;
     border-radius: 0px;
 }
+/* Keep the original contact form, but let it use the full mobile width. */
+@media (max-width: 700px) {
+    #h-text { width: 90%; margin: 0 auto; display: block; }
+    #h-text h1 { margin-top: 40px; font-size: clamp(36px, 10vw, 60px); }
+}
